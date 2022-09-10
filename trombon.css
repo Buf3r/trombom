@@ -1,0 +1,125 @@
+*{
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: black;
+  font-family: "calibri";
+}
+.menu{
+  width: 1000px;
+  margin: 0 auto;
+}
+img{
+  width: 320px;
+  height: 50px;
+  float:  left;
+  padding: 1px;
+  margin-top: 5px;
+  margin-left: -50px;
+}
+header{ /*la barra*/
+  background: #999696;
+  width: 100%;
+  content:"";
+  clear:both;
+  display: table;
+  border-style: inset;
+}
+#video{
+  border-radius: 20px;
+  align-content: space-around;
+  display: block;
+}
+#texto{
+  margin: 10%;
+  margin-top: 5%;
+  margin-bottom: -2%;
+  color: white;
+}
+#email{
+  margin: auto;
+  align-content: center;
+  display: block;
+}
+#submit{
+  margin: auto;
+  align-content: center;
+  display: block;
+  background-color: rgb(209, 209, 93);
+}
+#precios{
+  border: solid white;
+  color: aliceblue;
+  margin-top: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav{
+  float:  right;
+  margin-right: -250px;
+}
+nav ul li{
+  list-style: none;
+  margin-left:75px;
+  float: left;
+  padding: 12px;
+  position: relative;
+}
+nav ul li a{
+  text-decoration: none;
+  color: rgb(209, 209, 93);
+  font-weight: bold;
+}
+nav ul li a::before{
+  display: block;
+  content: "";
+  width: 0%;
+  background: #444;
+  height: 5px;
+  top: 0;
+  position: absolute;
+}
+nav ul li a:hover::before{
+  width: 100%;
+  animation: ease-in;
+  size: 10%;
+}
+.boton{
+  font-family: fantasy;
+  color: white;
+  font-size: 5em;
+  background-color: red;
+  text-align: center;
+  position: relative;
+  padding: 0px 20px 70px 20px;
+  margin-left: 50px;
+  margin-top: 150px;
+  border-radius: 50%;
+  cursor: progress;
+}
+#text{
+  font-size: 200px;
+}
+.atributos{
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  color: white;
+}
+
+@media (max-width: 1000px){
+  body{
+    background-color: darkred;
+    color: white;
+    font-size: 100px;
+
+  }
+  }
